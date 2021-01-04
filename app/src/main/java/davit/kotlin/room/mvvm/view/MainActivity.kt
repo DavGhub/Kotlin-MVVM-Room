@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.room.mvvm.R
+import davit.kotlin.room.mvvm.R
 import davit.kotlin.room.mvvm.viewmodel.LoginViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -33,16 +33,16 @@ class MainActivity : AppCompatActivity() {
 
             if (strUsername.isEmpty()) {
                 txtUsername.error = getString(R.string.username_error_text)
-            }
-            else if (strPassword.isEmpty()) {
+            } else txtUsername.error = null
+
+
+            if (strPassword.isEmpty()) {
                 txtPassword.error = getString(R.string.password_error_text)
-            }
-            else {
+            } else txtPassword.error = null
+
+            if (strUsername.isNotEmpty() && strPassword.isNotEmpty()) {
                 loginViewModel.insertData(context, strUsername, strPassword)
                 lblInsertResponse.text = getString(R.string.Inserted_Successfully)
-
-                txtUsername.error = null
-                txtPassword.error = null
             }
         }
 
@@ -56,8 +56,7 @@ class MainActivity : AppCompatActivity() {
                     lblReadResponse.text = getString(R.string.data_not_found)
                     lblUseraname.text = getString(R.string.lines)
                     lblPassword.text = getString(R.string.lines)
-                }
-                else {
+                } else {
                     lblUseraname.text = it.Username
                     lblPassword.text = it.Password
 
