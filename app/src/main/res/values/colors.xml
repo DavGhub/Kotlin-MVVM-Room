@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#04a777</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="slim_line_color">#8D8D8D</color>
+    <color name="black">#000000</color>
+    <color name="hint_text_color">#8D8D8D</color>
+    <color name="primaryColor">#02956A</color>
+</resources>

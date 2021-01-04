@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MVVM Room Kotlin</string>
+    <string name="title">Enter the Username and Password</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="insert_credentials_btn_text">Insert Credentials</string>
+    <string name="insert_response_field">- - -</string>
+    <string name="reading_and_displaying_data_from_room">Reading and Displaying Data From Room</string>
+    <string name="click_to_read_credentials_from_room">Click To Read Credentials From Room</string>
+    <string name="username_error_text">Please enter the username</string>
+    <string name="password_error_text">Please enter the password</string>
+    <string name="Inserted_Successfully">Inserted Successfully</string>
+    <string name="data_not_found">Data Not Found</string>
+    <string name="data_found_successfully">Data Found Successfully</string>
+    <string name="lines">- - -</string>
+</resources>
